@@ -1,7 +1,6 @@
 import { StarIcon } from "@primer/octicons-react";
 
 function RepositoriesSummary({ repository }) {
-	console.log(repository);
 	const { stargazers_count, open_issues, forks, language } = repository;
 
 	return (
@@ -11,6 +10,7 @@ function RepositoriesSummary({ repository }) {
 			</div>
 			<div>{open_issues} issues need help</div>
 			<div>{forks} Forks</div>
+			<div>{language}</div>
 		</div>
 	);
 }
