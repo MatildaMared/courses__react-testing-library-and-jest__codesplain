@@ -1,7 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import HomeRoute from "./HomeRoute";
-import { setupServer } from "msw/node";
-import { rest } from "msw";
 import { MemoryRouter } from "react-router-dom";
 import { createServer } from "../test/server";
 
