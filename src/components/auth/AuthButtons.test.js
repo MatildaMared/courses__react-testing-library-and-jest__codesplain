@@ -35,7 +35,10 @@ describe("AuthButtons component", () => {
 			});
 
 			expect(signInButton).toBeInTheDocument();
+			expect(signInButton).toHaveAttribute("href", "/signin");
+
 			expect(signUpButton).toBeInTheDocument();
+			expect(signUpButton).toHaveAttribute("href", "/signup");
 		});
 
 		it("does not display a sign out button", async () => {
@@ -82,6 +85,7 @@ describe("AuthButtons component", () => {
 			});
 
 			expect(signOutButton).toBeInTheDocument();
+			expect(signOutButton).toHaveAttribute("href", "/signout");
 		});
 	});
 });
